@@ -1,0 +1,6 @@
+framework module econtratokyc_2_sdk {
+  umbrella header "econtratokyc_2_sdk.h"
+  export *
+
+  module * { export * }
+}

@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="utf-8">
+  <title>eContratoKyC Paso4 Fin KO</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link href="css/#CSS_STYLESHEET" rel="stylesheet">
+</head>
+<body class="#BRAND_STYLE-cms" onload="loadBreadcrumb('Fin')">
+  <div class="container-fluid-flex">  
+        <div class="row-flex">
+            <div class="box bg-lightgrey">
+              <div class="container-flex">
+                <div class="col-flex-xs-12 col-flex-sm-12 col-flex-md-12 col-flex-lg-12">
+                  <div class="step-form-counter">
+                    <div class="step-container">
+                      <div class="step completed">
+                        <div class="step-number">
+                          <span class="number">1</span>
+                          <div class="tick"></div>
+                        </div>
+                        <span class="step-title">Capturar anverso</span>
+                      </div>
+                      <div class="step completed">
+                        <div class="step-number">
+                          <span class="number">2</span>
+                          <div class="tick"></div>
+                        </div>
+                        <span class="step-title">Capturar reverso</span>
+                      </div>
+                      <div class="step completed">
+                        <div class="step-number">
+                          <span class="number">3</span>
+                          <div class="tick"></div>
+                        </div>
+                        <span class="step-title">Validar</span>
+                      </div>
+                      <div class="step current">
+                        <div class="step-number">
+                          <span class="number">4</span>
+                          <div class="tick"></div>
+                        </div>
+                        <span class="step-title">Fin</span>
+                      </div>
+                    </div>
+                    <div class="step-progress">
+                      <div class="progress" style="width: 100%;">
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+        </div>
+        <div class="row-flex">
+          <div class="box mod-cases">
+            <div class="container-flex">
+              <div class="col-flex-xs-12 col-flex-sm-12 col-flex-md-12 col-flex-lg-12">
+                <h1 class="title-page">
+                  <span class="font-sm">
+                    Captura de documentos
+                  </span>
+                </h1>
+              </div>
+            </div>
+          </div>
+        </div>
+        <!--Captura con éxito-->
+        <div class="row-flex">
+            <div class="box mod-divider mod-divider-xs">
+              <div class="container-flex">
+                <div class="col-flex-xs-12 col-flex-sm-12 col-flex-md-12 col-flex-lg-12">
+                    <div class="message-relevant error" style="[collapse_classificationMessage]">
+                      <div class="icon">
+                          <svg viewBox="0 0 30 27" fill="none" xmlns="http://www.w3.org/2000/svg">
+                          <path fill-rule="evenodd" clip-rule="evenodd" d="M29.5456 21.7575H29.5459L17.8793 1.74738H17.8789C17.2821 0.722786 16.1857 0.0925903 15 0.0925903C13.8142 0.0925903 12.7178 0.722786 12.121 1.74738H12.1207L0.482708 21.7082L0.481468 21.7103L0.454068 21.7574H0.454348C-0.147352 22.7886 -0.151869 24.0628 0.442504 25.0982C1.03688 26.1336 2.13944 26.7723 3.33335 26.7728H26.6667C27.8605 26.7723 28.963 26.1336 29.5574 25.0982C30.1517 24.0628 30.1472 22.7887 29.5456 21.7575ZM20.156 21.3686C19.8989 21.6258 19.5501 21.7703 19.1865 21.7703C18.8228 21.7703 18.474 21.6258 18.2169 21.3686L15 18.1501L11.7831 21.3686C11.4375 21.7199 10.9301 21.8588 10.4538 21.7325C9.97745 21.6062 9.60553 21.234 9.47951 20.7577C9.35349 20.2813 9.49276 19.7739 9.84431 19.4286L13.0612 16.2104L9.95867 13.1064C9.42896 12.5699 9.43162 11.7064 9.96462 11.1732C10.4976 10.64 11.3611 10.6369 11.8978 11.1664L15.0002 14.2704L18.1026 11.1664C18.448 10.8146 18.9557 10.6753 19.4324 10.8015C19.909 10.9278 20.2811 11.3002 20.4071 11.7768C20.5331 12.2535 20.3935 12.7612 20.0416 13.1064L16.9391 16.2104L20.156 19.4285C20.6913 19.9644 20.6913 20.8326 20.156 21.3686Z"></path>
+                          </svg>
+                      </div>
+                      <div class="message">
+                          <div class="message-info">
+                              <p class="title">El documento no se ha podido validar, Pulsa CONTINUAR para seguir.</p>
+                            </div>
+                      </div>
+					</div>
+
+                    <div class="btn-group mod-divider mod-divider-xs" style="float: right">
+                        <button id="aceptResultKO"
+                            onclick="aceptResultKO()"
+                            type="button"
+                            name="rightcapture"
+                            class="btn btn-primary btn-md"
+                            title="Continuar" >Continuar</button>
+                    </div>
+				</div>
+              </div>
+            </div>
+        </div>
+  </div>
+  <script src="js/orangeEventsPaso4.js"></script>
+  <script src="js/breadcrumb.js"></script>
+</body>
+
+</html>

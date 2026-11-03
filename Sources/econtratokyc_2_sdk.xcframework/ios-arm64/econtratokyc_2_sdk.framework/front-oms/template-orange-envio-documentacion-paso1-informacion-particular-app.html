@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="utf-8">
+  <title>eContratoKyC paso1</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+    <link href="./css/#CSS_STYLESHEET" rel="stylesheet">
+</head>
+<body class="#BRAND_STYLE-cms" onload="loadBreadcrumb('Capturar anverso')">
+  <div class="container-fluid-flex">
+    <div class="row-flex">
+      <div class="box bg-lightgrey">
+        <div class="container-flex">
+          <div class="col-flex-xs-12 col-flex-sm-12 col-flex-md-12 col-flex-lg-12">
+            <div class="step-form-counter">
+              <div class="step-container">
+                <div class="step current">
+                  <div class="step-number">
+                    <span class="number">1</span>
+                    <div class="tick"></div>
+                  </div>
+                  <span class="step-title">Capturar anverso</span>
+                </div>
+                <div class="step">
+                  <div class="step-number">
+                    <span class="number">2</span>
+                    <div class="tick"></div>
+                  </div>
+                  <span class="step-title">Capturar reverso</span>
+                </div>
+                <div class="step">
+                  <div class="step-number">
+                    <span class="number">3</span>
+                    <div class="tick"></div>
+                  </div>
+                  <span class="step-title">Validar</span>
+                </div>
+                <div class="step">
+                  <div class="step-number">
+                    <span class="number">4</span>
+                    <div class="tick"></div>
+                  </div>
+                  <span class="step-title">Fin</span>
+                </div>
+              </div>
+              <div class="step-progress">
+                <div class="progress" style="width: 25%;">
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="row-flex">
+      <div class="box mod-cases">
+        <div class="container-flex">
+          <div class="col-flex-xs-12 col-flex-sm-12 col-flex-md-12 col-flex-lg-12">
+            <h3 class="title-sm color-primary">
+              <span class="font-sm">1. Enfoca el anverso del documento con la cámara</span>
+            </h3>
+          </div>
+          <div class="col-flex-xs-12 col-flex-sm-12 col-flex-md-4 col-flex-lg-4">
+              <div class="btn-group pull-left mod-divider mod-divider-xs">
+                <button id="botonVolver"
+                    onclick="botonVolver()"
+                    title="link title" class="btn btn-md btn-default btn-icon">
+                Atrás
+                <svg class="icon-svg" width="10" height="13" viewBox="0 0 9 14" fill="none" xmlns="http://www.w3.org/2000/svg"><path fill-rule="evenodd" clip-rule="evenodd" d="M9 2L7 0L0 7L7 14L9 12L4 7L9 2Z"></path></svg>
+                </button>
+              </div>
+              <div class="btn-group pull-right mod-divider mod-divider-xs">
+                  <button id="botonAbrirCamara"
+                      onclick="botonAbrirCamara()"
+                      class="btn btn-primary btn-md sendButton"
+                      title="Abrir cámara" type="submit" value="Abrir">
+                      Abrir cámara</button>
+              </div> 
+          </div>
+          <div class="col-flex-xs-12 col-flex-sm-12 col-flex-md-8 col-flex-lg-8">
+            <img title="documentacion" alt="documentacion" class="img-responsive alignment-centered p-t-15" data-original="img/mesa.svg" src="img/mesa.svg">
+            <div class="boxinfo-default boxinfo-info bg-lightgrey">
+              <span>
+                <img class="icon-info" src="img/icons/message-info.svg" alt="">
+              </span>
+              <ul class="list-default">
+                  <li><strong>Intenta que los dedos no oculten datos.</strong></li>
+                  <li><strong>Evita la luz directa, puede crear brillos.</strong></li>
+                  <li><strong>Coloca el documento sobre una superficie plana y un fondo oscuro.</strong></li>
+              </ul>
+            </div>
+          </div>
+      </div>
+    </div>    
+    </div>
+  </div>
+  <script src="js/orangeEventsPaso1.js"></script>
+  <script src="js/breadcrumb.js"></script>
+</body>
+</html>

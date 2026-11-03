@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="utf-8">
+  <title>eContratoKyC paso0</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+    <link href="./css/#CSS_STYLESHEET" rel="stylesheet">
+</head>
+<body class="#BRAND_STYLE-cms">
+  <div class="container-fluid-flex">  
+    <div class="row-flex">
+        <div class="box mod-cases">
+          <div class="container-flex">
+              <div class="col-flex-xs-12 col-flex-sm-12 col-flex-md-12 col-flex-lg-12">
+                <h1 class="title-page">
+                  <span class="font-sm">Envío documentación</span>
+                </h1>
+                <h2 class="title-sm color-primary">
+                  <span class="font-sm">Antes de comenzar revisa... </span>
+                </h2>
+              </div>
+              <div class="col-flex-xs-12 col-flex-sm-12 col-flex-md-4 col-flex-lg-4">
+                <ul class="list-features">
+                  <li>
+                    <img src="img/icons/type-brightness--black-brand-orange-state-default.svg" alt="icon light" title="iluminación">
+                    Dispones de buena iluminación
+                  </li>
+                  <li>
+                    <img src="img/icons/type-camera--black-brand-orange-state-default.svg" alt="icon camera" title="cámara">
+                    Cámara activada y habilitar permisos
+                  </li>
+                  <li>
+                    <img src="img/icons/type-wifi-status--black-brand-orange-state-default.svg" alt="icon wifi" title="wifi">
+                    Estado de WiFi o conexión de datos
+                  </li>
+                </ul>
+                <form class="mod-divider mod-divider-xs">
+                  <fieldset>
+                    <legend>Datos</legend>
+                      <div class="form-group">
+                        <label class="control-label" for="">Prepara el documento</label>
+                        <span class="color-primary">*</span>
+                        <div class="custom-select">
+                        <select id="selectorDocumentacion" name="tipo_documento" class="form-control" required>
+                          <option value="0">Elige tipo de documento</option>
+                          <option value="1">Pasaporte</option>
+                          <option value="2">DNI</option>
+                          <option value="4">NIE</option>
+                          <option value="6">DNI-UE</option>
+                        </select>
+                        </div>
+                        <p id="errorSelectorDocumentacion" class="msg-error">
+                            <span class="icon-moon icon-error-form-field"></span>
+                            <span class="txt">Por favor, seleccione una opción</span>
+                        </p>
+                      </div>
+                      <!--<div class="form-group has-error"> para mostrar el error-->
+                      <div class="form-group">
+                        <div class="checkbox-radio">
+                          <div class="checkbox checkbox-primary">
+                            <input id="checkboxTratamientoInfo" class="checkValidation required"
+                                name="legalinfo" type="checkbox" value="option1">
+                                <label for="checkboxTratamientoInfo">
+                                    <strong>
+                                        He leído y acepto la
+                                        <a href="https://www.orange.es/politicaprotecciondatos.html?internal_source=orange&amp;internal_medium=home&amp;internal_term=pie+corporativo+politica+privacidad&amp;internal_campaign=medios" target="_blank" title="política de privacidad">política de privacidad
+                                        </a>
+                                    </strong>
+                                </label>
+                            <p id="errorCheckboxTratamientoInfo" class="msg-error">
+                                <span class="icon-moon icon-error-form-field"></span>
+                                <span class="txt">Debes aceptar la política de protección de datos</span>
+                            </p>
+                          </div>
+                        </div>
+                      </div>
+                    </fieldset>
+                </form>
+                <div class="btn-group pull-left mod-divider mod-divider-xs">
+                  <button id="botonVolver"
+                      class="btn btn-md btn-default btn-icon"
+                      title="Atrás"
+                      value="Atras">Atrás
+                      <svg class="icon-svg" width="10" height="13" viewBox="0 0 9 14" fill="none" xmlns="http://www.w3.org/2000/svg"><path fill-rule="evenodd" clip-rule="evenodd" d="M9 2L7 0L0 7L7 14L9 12L4 7L9 2Z"></path></svg>
+                  </button>
+                </div>
+                <div class="btn-group pull-right mod-divider mod-divider-xs">
+                  <button id="botonComenzar"
+                      class="btn btn-primary btn-md sendButton"
+                      title="enviar formuario" type="submit"
+                      value="Comenzar">Comenzar</button>
+                </div>
+              </div>
+              <div class="col-flex-xs-12 col-flex-sm-12 col-flex-md-8 col-flex-lg-8">
+                <img title="documentacion" alt="documentacion" class="img-responsive alignment-centered" data-original="img/img_documentacion_web.svg" src="img/img_documentacion_web.svg">
+              </div>
+          </div>
+        </div>
+    </div>
+  </div>
+  <script src="js/orangeEventsPaso0.js"></script>
+</body>
+
+</html>

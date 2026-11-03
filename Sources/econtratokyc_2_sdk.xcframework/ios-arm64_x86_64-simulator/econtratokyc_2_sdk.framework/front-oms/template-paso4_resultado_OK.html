@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="utf-8">
+  <title>eContratoKyC Paso4 Fin OK</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link href="css/#CSS_STYLESHEET" rel="stylesheet">
+</head>
+<body class="#BRAND_STYLE-cms" onload="loadBreadcrumb('Fin')">
+  <div class="container-fluid-flex">  
+        <div class="row-flex">
+            <div class="box bg-lightgrey">
+              <div class="container-flex">
+                <div class="col-flex-xs-12 col-flex-sm-12 col-flex-md-12 col-flex-lg-12">
+                  <div class="step-form-counter">
+                    <div class="step-container">
+                      <div class="step completed">
+                        <div class="step-number">
+                          <span class="number">1</span>
+                          <div class="tick"></div>
+                        </div>
+                        <span class="step-title">Capturar anverso</span>
+                      </div>
+                      <div class="step completed">
+                        <div class="step-number">
+                          <span class="number">2</span>
+                          <div class="tick"></div>
+                        </div>
+                        <span class="step-title">Capturar reverso</span>
+                      </div>
+                      <div class="step completed">
+                        <div class="step-number">
+                          <span class="number">3</span>
+                          <div class="tick"></div>
+                        </div>
+                        <span class="step-title">Validar</span>
+                      </div>
+                      <div class="step current">
+                        <div class="step-number">
+                          <span class="number">4</span>
+                          <div class="tick"></div>
+                        </div>
+                        <span class="step-title">Fin</span>
+                      </div>
+                    </div>
+                    <div class="step-progress">
+                      <div class="progress" style="width: 100%;">
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+        </div>
+        <div class="row-flex">
+          <div class="box mod-cases">
+            <div class="container-flex">
+              <div class="col-flex-xs-12 col-flex-sm-12 col-flex-md-12 col-flex-lg-12">
+                <h1 class="title-page">
+                  <span class="font-sm">
+                    Captura de documentos
+                  </span>
+                </h1>
+              </div>
+            </div>
+          </div>
+        </div>
+        <!--Captura con éxito-->
+        <div class="row-flex">
+            <div class="box mod-divider mod-divider-xs">
+              <div class="container-flex">
+                <div class="col-flex-xs-12 col-flex-sm-12 col-flex-md-12 col-flex-lg-12">
+                    <div class="message-relevant success" style="[collapse_sin_classificationMessage]">
+                        <div class="icon">
+                            <img src="img/icons/ic_tick_confirmation.svg" alt="Captura realizada con éxito"> 
+                        </div>
+                        <div class="message">
+                            <div class="message-info">
+                                <p class="title">¡La captura se ha realizado con éxito! Pulsa CONTINUAR para seguir.</p>
+                              </div>
+                        </div>
+                    </div>
+                    <div class="btn-group mod-divider mod-divider-xs" style="float: right">
+                        <button id="aceptResult"
+                            onclick="aceptResult()"
+                            type="button"
+                            name="rightcapture"
+                            class="btn btn-primary btn-md"
+                            title="Continuar" >Continuar</button>
+                    </div>
+				</div>
+              </div>
+            </div>
+        </div>
+  </div>
+  <script src="js/orangeEventsPaso4.js"></script>
+  <script src="js/breadcrumb.js"></script>
+</body>
+
+</html>

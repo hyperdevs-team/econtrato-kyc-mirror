@@ -1,0 +1,11 @@
+framework module ImageProcessing {
+  umbrella header "ImageProcessing.h"
+  export *
+
+  module * { export * }
+}
+
+module ImageProcessing.Swift {
+  header "ImageProcessing-Swift.h"
+  requires objc
+}
